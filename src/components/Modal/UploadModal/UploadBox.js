@@ -13,7 +13,7 @@ const UploadBox = ({ fileHandler }) => {
             <Text {...styles.text}>
                 Click here to upload or drag and drop to upload
             </Text>
-            <Input {...styles.input} onChange={fileHandler} aria-label="Upload" zIndex={1}/>
+            <Input accept="application/pdf" {...styles.input} onChange={fileHandler} aria-label="Upload" zIndex={1}/>
         </Box>
     );
 }
